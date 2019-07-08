@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width" , initial-scale="1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <title>instagram_login</title>
+</head>
+
+<body onclick="myText_reset()">
+
+  <!-- outer shell -->
+  <div class="wrapper">
+
+    <!-- the mobile image on the left of the login window with 3 images on top of each other for transitions -->
+    <div class="login_back">
+      <div class="login_front">
+        <img id="main_image" class="image_main" src="img/main.jpg" alt="">
+        <img id="switch_image_1" class="image_switch" src="img/switch1.jpg" alt="">
+        <img id="switch_image_2" class="image_switch" src="img/switch2.jpg" alt="">
+        <img id="switch_image_3" class="image_switch" src="img/switch3.jpg" alt="">
+
+      </div>
+
+    </div>
+
+    <!-- Instagram title, subtitle, facebook login button and the OR bar -->
+    <div class=intro>
+      <div class="login_message">
+        <h1>Instagram</h1>
+        <h2>Sign up to see photos and videos from your friends.</h2>
+        <div class="button_placement">
+          <a href="profile.html"><button type="button" name="button"><span class="fb_icon"><i class="fab fa-facebook"></i></span>Log in with Facebook</button></a>
+        </div>
+        <div class="or_outer">
+          <div class="or_side">
+
+          </div>
+          <div class="or_inner">
+            OR
+          </div>
+          <div class="or_side">
+
+          </div>
+        </div>
+
+        <!-- login form -->
+        <form>
+
+          <div class="input_first">
+            <div class="input_second">
+              <div class="input_third">
+                <label id="label_1" class="" for="">Mobile Number or Email</label>
+                <input id="label_1_input" class="input_login" type="text" name="mobile_email" oninput="myText_1()"><br>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="input_first">
+            <div class="input_second">
+              <div class="input_third">
+                <label id="label_2" class="" for="">Full Name</label>
+                <input id="label_2_input" class="input_login" type="text" name="full_name" oninput="myText_2()"><br>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="input_first">
+            <div class="input_second">
+              <div class="input_third">
+                <label id="label_3" class="" for="">Username</label>
+                <input id="label_3_input" class="input_login" type="text" name="user_name" oninput="myText_3()"><br>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="input_first">
+            <div class="input_second">
+              <div class="input_third">
+                <label id="label_4" class="" for="">Password</label>
+                <input id="label_4_input" class="input_login" type="password" name="user_password" oninput="myText_4()"><br>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- 'next' button and paragraph section -->
+          <div class="button_placement">
+            <a id="submit" href="#"><button id="myBtn" type="button" onclick="submitCheck()">Next</button></a>
+          </div>
+
+          <p>By signing up, you agree to our <a href="#" onclick="return false;">Terms</a>. Learn how we collect, use and share your data in our <a href="#" onclick="return false;">Data Policy</a> and how we use cookies and similar technology in our
+            <a href="#" onclick="return false;">Cookies Policy</a>.</p>
+
+        </form>
+      </div>
+
+      <!-- have an account message -->
+      <div class="sub_intro">
+        <p>Have an account? <a href="#" onclick="return false;">Log in</a></p>
+      </div>
+
+      <!-- PlayStore, AppStore and MS Store icons -->
+      <div class="sub_intro_2">
+        <p>Get the app.</p>
+        <a href="https://itunes.apple.com/app/instagram/id389801252?mt=8&vt=lo" target="_blank"><img src="img/apple.png" alt=""></a>
+        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DsignupPage%26ig_mid%3DXMk9ywALAAERW8B76QkPAqITIiL9%26utm_content%3Dlo%26utm_medium%3Dbadge" target="_blank"><img
+            src="img/gplay.png" alt=""></a>
+        <a href="https://www.microsoft.com/en-us/p/instagram/9nblggh5l9xt" target="_blank"><img src="img/micro.png" alt=""></a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- navigation bar at the bottom of the page -->
+  <footer>
+    <div class="foot_bar">
+      <nav class="navigation_bottom">
+        <ul>
+          <li><a href="#" onclick="return false;">About Us</a></li>
+          <li><a href="#" onclick="return false;">Support</a></li>
+          <li><a href="#" onclick="return false;">Press</a></li>
+          <li><a href="#" onclick="return false;">API</a></li>
+          <li><a href="#" onclick="return false;">Jobs</a></li>
+          <li><a href="#" onclick="return false;">Privacy</a></li>
+          <li><a href="#" onclick="return false;">Terms</a></li>
+          <li><a href="#" onclick="return false;">Directory</a></li>
+          <li><a href="#" onclick="return false;">Profiles</a></li>
+          <li><a href="#" onclick="return false;">Hashtags</a></li>
+          <li><a href="#" onclick="return false;">Language</a></li>
+        </ul>
+
+        <div class="copyright">
+          <span class="DINPA">© 2019 Instagram</span>
+        </div>
+
+      </nav>
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

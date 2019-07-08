@@ -1,0 +1,265 @@
+/* loader mask */
+#loading_mask {
+  background-color: white;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.wrapper_main {
+  padding-top: 40px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.main_image_profile {
+  margin-right: 10px;
+  width: 77px;
+  height: 77px;
+  flex-shrink: 0;
+}
+
+.main_image_profile img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile_layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+
+.profile_details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.profile_data {
+  display: flex;
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.profile_data h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 2em;
+  margin: 0;
+  text-align: left;
+  width: auto;
+  height: fit-content;
+}
+
+.profile_data span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.edit_profile {
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+  color: #262626;
+  width: 100%;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 5px 9px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#stats_mobile {
+  margin-bottom: 20px;
+  display: flex;
+  order: 4;
+  border-top: 1px solid #efefef;
+  width: 100%;
+  padding-top: 20px;
+  justify-content: space-around;
+}
+
+#stats_mobile li {
+  margin-left: 0;
+  font-size: 16px;
+  color: #999;
+}
+
+#stats_mobile li span {
+  font-weight: 600;
+  color: #262626;
+  display: block;
+  text-align: center;
+}
+
+.user_full_name {
+  padding: 0 16px;
+}
+
+.user_full_name h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  margin: 0;
+  text-align: left;
+  width: auto;
+  height: 100%;
+}
+
+.top-scroller i {
+  display: none;
+}
+
+#main_button {
+  display: none;
+}
+
+#full_name_desktop {
+  display: none;
+}
+
+#full_name_mobile {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#stats_desktop {
+  display: none;
+}
+
+#stats_mobile {
+  display: flex;
+}
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+@media (min-width: 769px) {
+  .wrapper_main {
+    padding: 60px 20px 0;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .main_image_profile img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .main_image_profile {
+    margin-right: 80px;
+    margin-left: 80px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile_layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .profile_data {
+    display: flex;
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .profile_data h1 {
+    margin-right: 20px;
+  }
+
+  .profile_details {
+    width: inherit;
+  }
+
+  #stats_desktop {
+    margin-bottom: 20px;
+    display: flex;
+    order: 4;
+    width: 100%;
+    padding-top: 10px;
+    justify-content: space-evenly;
+  }
+
+  #stats_desktop li {
+    margin-left: 0;
+    font-size: 16px;
+    margin-right: 40px;
+    color: #999;
+    display: flex;
+  }
+
+  #stats_desktop li span {
+    font-weight: 600;
+    color: #262626;
+    display: block;
+    text-align: center;
+    margin-right: 5px;
+  }
+
+  .user_full_name {
+    padding: 0;
+  }
+
+  .user_full_name p {
+    margin-bottom: 20px;
+  }
+
+  .top-scroller i {
+    display: inline;
+  }
+
+  .top-scroller {
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    font-size: 20px;
+    padding: 2px;
+    display: none;
+    z-index: 2;
+    text-align: center;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .35);
+    color: #fff;
+    line-height: 40px;
+  }
+
+  .top-scroller:hover {
+    background: rgba(0, 0, 0, .6);
+  }
+
+  #extra_button {
+    display: none;
+  }
+
+  #main_button {
+    display: block;
+  }
+
+  #stats_mobile {
+    display: none;
+  }
+
+  #full_name_mobile {
+    display: none;
+  }
+
+  #full_name_desktop {
+    display: block;
+    order: 5;
+  }
+}

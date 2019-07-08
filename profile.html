@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width" , initial-scale="1">
+
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- my main CSS -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="swiper.min.css">
+
+  <!-- google font link -->
+  <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+
+  <!-- jQuery link -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+
+  <title>instagram_profile</title>
+</head>
+
+<body onclick="myGlass_2()">
+
+  <!-- loader mask -->
+  <div id="loading_mask"></div>
+
+  <section>
+
+    <!-- navigation at the top of the page -->
+    <nav class="navigation_profile">
+
+      <!-- navigation outer container -->
+      <div class="nav_top_outer">
+        <!-- navigation inner container -->
+        <div class="nav_top_inner">
+
+          <!-- navigation logo left -->
+          <div class="nav_top_logo">
+            <a href="index.html">
+              <div class="nav_top_logo_container">
+                <span><i class="fab fa-instagram fa-2x"></i></span>
+                <div class="nav_top_logo_divider"></div>
+                <div class="nav_top_logo_text">
+                  <h1>Instagram</h1>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- navigation search middle -->
+          <div class="nav_top_search">
+            <span id="glass" class="looking_glass"><i class="fas fa-search fa-sm"></i></span>
+            <input id="glass_input" class="input_profile" type="text" name="search" placeholder="Search" onkeypress="myGlass()">
+          </div>
+          <!-- navigation icons right -->
+          <div class="nav_top_icons">
+            <a href="#" onclick="return false;"><span><i class="far fa-compass fa-2x"></i></span></a>
+            <a href="#" onclick="return false;"><span><i class="far fa-heart fa-2x"></i></span></a>
+            <a href="#" onclick="return false;"><span><i class="far fa-user fa-2x"></i></span></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+    <!-- main content -->
+    <main>
+      <!-- profile layout & picture -->
+      <div class="wrapper_main">
+        <header class="profile_layout">
+          <div class="main_image_profile">
+            <img src="img/profile.jpg" alt="profile picture">
+          </div>
+
+          <!-- profile details section -->
+          <section class="profile_details">
+            <div class="profile_data">
+              <h1>Username</h1>
+              <div class="button_media">
+                <!-- edit profile button for desktop -->
+                <a id="main_button" href="#" onclick="return false;"><button class="edit_profile" type="button" name="button">Edit profile</button></a>
+              </div>
+              <div class="">
+                <span><i class="fas fa-cog fa-2x"></i></span>
+              </div>
+            </div>
+
+            <!-- edit profile button for mobile -->
+            <a id="extra_button" href="#" onclick="return false;"><button class="edit_profile" type="button" name="button">Edit profile</button></a>
+
+            <!-- profile stats list for desktop-->
+            <ul id="stats_desktop">
+              <li><span>0</span> posts</li>
+              <li><span>0</span> followers</li>
+              <li><span>0</span> following</li>
+            </ul>
+
+            <!-- user full name for desktop-->
+            <div id="full_name_desktop" class="user_full_name">
+              <h1>James Bond</h1>
+              <p>From Russia with Love <span>🌹</span></p>
+              <br>
+            </div>
+
+          </section>
+        </header>
+
+        <!-- user full name for mobile-->
+        <div id="full_name_mobile" class="user_full_name">
+          <h1>James Bond</h1>
+          <p>From Russia with Love <span>🌹</span></p>
+        </div>
+
+        <!-- stories bar -->
+        <!-- <div id="scroll_container" class="stories_content">
+
+          <div id="scroll_left" class="scroller scroller_left">
+            <i class="fas fa-angle-left fa-xs"></i>
+          </div>
+
+          <div class="stories_img_container">
+            <a id="myBtn_1" href="#"><img src="img/posts_1.jpg" alt="">
+              <p class="test_tag">some</p>
+            </a>
+          </div>
+
+          <div class="stories_img_container">
+            <a id="myBtn_2" href="#"><img src="img/posts_2.jpg" alt="">
+              <p class="test_tag">nice</p>
+            </a>
+          </div>
+
+          <div class="stories_img_container">
+            <a id="myBtn_3" href="#"><img src="img/posts_3.jpg" alt="">
+              <p class="test_tag">animal</p>
+            </a>
+          </div>
+
+          <div class="stories_img_container">
+            <a id="myBtn_4" href="#"><img src="img/posts_4.jpg" alt="">
+              <p class="test_tag">pictures</p>
+            </a>
+          </div>
+
+          <div class="stories_img_container">
+            <a id="myBtn_5" href="#"><img src="img/posts_5.jpg" alt="">
+              <p class="test_tag">hidden</p>
+            </a>
+          </div>
+
+          <div class="stories_img_container">
+            <a id="myBtn_6" href="#"><img src="img/posts_6.jpg" alt="">
+              <p class="test_tag">here</p>
+            </a>
+          </div>
+
+          <div id="scroll_right" class="scroller scroller_right">
+            <i class="fas fa-angle-right fa-xs"></i>
+          </div>
+
+        </div> -->
+
+        <div id="scroll_container" class="swiper-container stories_content">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="stories_img_container">
+                <a id="myBtn_1" href="#"><img src="img/posts_1.jpg" alt="">
+                  <p class="test_tag">some</p>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="stories_img_container">
+                <a id="myBtn_2" href="#"><img src="img/posts_2.jpg" alt="">
+                  <p class="test_tag">nice</p>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="stories_img_container">
+                <a id="myBtn_3" href="#"><img src="img/posts_3.jpg" alt="">
+                  <p class="test_tag">animal</p>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="stories_img_container">
+                <a id="myBtn_4" href="#"><img src="img/posts_4.jpg" alt="">
+                  <p class="test_tag">pictures</p>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="stories_img_container">
+                <a id="myBtn_5" href="#"><img src="img/posts_5.jpg" alt="">
+                  <p class="test_tag">hidden</p>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="stories_img_container">
+                <a id="myBtn_6" href="#"><img src="img/posts_6.jpg" alt="">
+                  <p class="test_tag">here</p>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-button-next scroller scroller_right"><i class="fas fa-angle-right fa-xs"></i></div>
+          <div class="swiper-button-prev scroller scroller_left"><i class="fas fa-angle-left fa-xs"></i></div>
+
+        </div>
+
+        <!-- profile stats list for mobile-->
+        <ul id="stats_mobile">
+          <li><span>0</span> posts</li>
+          <li><span>0</span> followers</li>
+          <li><span>0</span> following</li>
+        </ul>
+
+        <!-- buttons section -->
+        <div class="buttons_area">
+          <a id="posts_button" href="#" class="active" onclick="activeSwitch_1();enableSection();return false;"><span><i class="fas fa-th"></i></span>
+            <p>posts</p>
+          </a>
+          <a id="igtv_button" href="#" class="" onclick="activeSwitch_2();enableSection();return false;"><span><i class="fas fa-tv"></i></span>
+            <p>igtv</p>
+          </a>
+          <a id="saved_button" href="#" class="" onclick="activeSwitch_3();enableSection();return false;"><span><i class="far fa-bookmark"></i></span>
+            <p>saved</p>
+          </a>
+          <a id="tagged_button" href="#" class="" onclick="activeSwitch_4();enableSection();return false;"><span><i class="fas fa-user-tag"></i></span>
+            <p>tagged</p>
+          </a>
+        </div>
+
+        <!-- button links section -->
+        <div id="posts" class="posts_active">
+          <div class="posts_frame">
+
+            <div class="posts_row">
+              <div class="posts_image" onmouseover="getRandomLikes()">
+                <img class="zoom" src="img/posts_2.jpg" alt="">
+              </div>
+              <div class="posts_image">
+                <img class="zoom" src="img/posts_2.jpg" alt="">
+              </div>
+              <div class="posts_image">
+                <img class="zoom" src="img/posts_2.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="posts_row">
+              <div class="posts_image">
+                <img class="zoom" src="img/posts_1.jpg" alt="">
+              </div>
+              <div class="posts_image">
+                <img class="zoom" src="img/posts_1.jpg" alt="">
+              </div>
+              <div class="posts_image">
+                <img class="zoom" src="img/posts_1.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="posts_row">
+              <div class="posts_image">
+                <img class="zoom" src="img/posts_3.jpg" alt="">
+              </div>
+              <div class="posts_image">
+                <img class="zoom" src="img/posts_3.jpg" alt="">
+              </div>
+              <div class="posts_image">
+                <img class="zoom" src="img/posts_3.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="igtv" class="inactive">
+        <div class="buttons_content">
+          <div class="icon">
+            <span><i class="fas fa-tv fa-2x"></i></span>
+          </div>
+          <h1>Upload a Video</h1>
+          <h2>Videos must be vertical and between 15 seconds and 10 minutes long.</h2>
+          <div class="icon">
+            <button type="button">Upload</button>
+          </div>
+        </div>
+      </div>
+      <div id="saved" class="inactive">
+        <div class="buttons_content">
+          <div class="icon">
+            <span><i class="far fa-bookmark fa-2x"></i></span>
+          </div>
+          <h1>Save</h1>
+          <h2>Save photos and videos that you want to see again. No one is notified, and only you can see what you've saved.</h2>
+        </div>
+      </div>
+      <div id="tagged" class="inactive">
+        <div class="buttons_content">
+          <div class="icon">
+            <span><i class="fas fa-user-tag fa-2x"></i></span>
+          </div>
+          <h1>Photos of you</h1>
+          <h2>When people tag you in photos, they'll appear here.</h2>
+
+        </div>
+      </div>
+
+      </div>
+
+    </main>
+
+  </section>
+
+  <!-- navigation bar at the bottom of the page -->
+  <footer>
+    <div class="foot_bar">
+      <nav class="navigation_bottom">
+        <ul>
+          <li><a href="#" onclick="return false;">About Us</a></li>
+          <li><a href="#" onclick="return false;">Support</a></li>
+          <li><a href="#" onclick="return false;">Press</a></li>
+          <li><a href="#" onclick="return false;">API</a></li>
+          <li><a href="#" onclick="return false;">Jobs</a></li>
+          <li><a href="#" onclick="return false;">Privacy</a></li>
+          <li><a href="#" onclick="return false;">Terms</a></li>
+          <li><a href="#" onclick="return false;">Directory</a></li>
+          <li><a href="#" onclick="return false;">Profiles</a></li>
+          <li><a href="#" onclick="return false;">Hashtags</a></li>
+          <li><a href="#" onclick="return false;">Language</a></li>
+        </ul>
+
+        <div class="copyright">
+          <span class="DINPA">© 2019 Instagram</span>
+        </div>
+
+      </nav>
+    </div>
+
+  </footer>
+
+  <div class="top-scroller js-top-scroller">
+
+    <i class="fas fa-arrow-up fa-lg"></i>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal_top">
+      <span class="modal_top_logo"><i class="fab fa-instagram fa-2x"></i></span>
+      <p><span id="vanilla">description1</span><span class="modal_p_dot"><i class="fas fa-circle fa-xs"></i></span> click or ESC to close</p>
+      <span class="modal_triple_dot"><i class="fas fa-ellipsis-h"></i></span>
+    </div>
+    <div class="modal_content">
+      <ul>
+        <li>
+          <input type="radio" checked="checked" name="slide">
+          <div class="slide">
+            <img src="img/stories_1.jpg" alt="">
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="slide">
+          <div class="slide">
+            <img src="img/stories_2.jpg" alt="">
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="slide">
+          <div class="slide">
+            <img src="img/stories_3.jpg" alt="">
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script src="script_profile.js"></script>
+  <script src="script_modal.js"></script>
+  <script src="swiper.min.js"></script>
+  <script src="myswiper.js"></script>
+</body>
+
+</html>

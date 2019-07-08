@@ -1,0 +1,194 @@
+.buttons_area {
+  border-top: 1px solid #efefef;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons_area a {
+  text-transform: uppercase;
+  height: 52px;
+  vertical-align: middle;
+  color: #999;
+  display: flex;
+  align-items: center;
+}
+
+.buttons_area p {
+  display: none;
+}
+
+.active {
+  color: #3897f0 !important;
+}
+
+.posts_frame {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
+
+.posts_row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.posts_image {
+  flex: auto;
+  width: 293px;
+  height: auto;
+  max-height: 293px;
+  max-width: 293px;
+  margin: 0 2px;
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+.posts_image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  align-self: center;
+}
+
+.posts_image:hover .image_overlay {
+  visibility: visible;
+  opacity: .7;
+}
+
+.image_overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  visibility: hidden;
+  background-color: black;
+}
+
+.image_overlay span {
+  margin-right: 10px;
+}
+
+.image_overlay p {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#igtv {
+  width: 100%;
+}
+
+.buttons_content {
+  margin: 60px auto 44px;
+  max-width: 438px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.buttons_content h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+  width: auto;
+}
+
+.buttons_content h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 1em;
+  margin: 0;
+  text-align: center;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.buttons_content button {
+  width: 100px;
+}
+
+.icon {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.icon span {
+  height: 100%;
+  width: 70px;
+}
+
+.icon span i {
+  border-radius: 50%;
+  border: solid 2px black;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inactive {
+  display: none;
+}
+
+.posts_active {
+  display: block;
+}
+
+.igtv_active {
+  display: block;
+}
+
+.saved_active {
+  display: block;
+}
+
+.tagged_active {
+  display: block;
+}
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+@media (min-width: 769px) {
+  .posts_image {
+    margin-right: 28px;
+    margin-bottom: 28px;
+  }
+
+  .active {
+    color: #262626 !important;
+    border-top: 1px solid #262626;
+    margin-top: -1px;
+  }
+
+  .buttons_area {
+    justify-content: center;
+  }
+
+  .buttons_area p {
+    display: block;
+  }
+
+  .buttons_area a {
+    margin-left: 60px;
+  }
+
+  .buttons_area a span {
+    margin-right: 8px;
+  }
+}
